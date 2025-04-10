@@ -17,27 +17,14 @@ namespace etterem
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
