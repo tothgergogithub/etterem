@@ -108,6 +108,7 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "elviszem";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // kezdőoldalToolStripMenuItem
             // 

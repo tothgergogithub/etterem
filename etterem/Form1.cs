@@ -20,13 +20,19 @@ namespace etterem
         
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            rendelés form2 = new rendelés();
             form2.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            rendelés form2 = new rendelés();
+            form2.ShowDialog();
         }
     }
 }
