@@ -64,8 +64,8 @@ namespace etterem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            pizza pizza = new pizza();
-            pizza.ShowDialog();
+            pizza pizzauj = new pizza();
+            pizzauj.ShowDialog();
         }
     }
 }
