@@ -38,6 +38,8 @@
             this.leadásToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -117,11 +119,31 @@
             this.listBox1.Size = new System.Drawing.Size(776, 238);
             this.listBox1.TabIndex = 59;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(478, 398);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(283, 46);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "Fizetés";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 398);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(283, 46);
+            this.button2.TabIndex = 61;
+            this.button2.Text = "Vissza";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox8);
@@ -147,5 +169,7 @@
         private System.Windows.Forms.ToolStripMenuItem leadásToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
