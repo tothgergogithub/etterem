@@ -34,7 +34,60 @@ namespace etterem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string username = textBox1.Text;
+            string email = textBox2.Text;
+            string pass = textBox3.Text;
 
+            string connStr = "server=localhost;user=root;database=regisztracio;port=3306;password=";
+
+            //adatbázis kapcsolat létrehozása
+
+            MySqlConnection conn = new MySqlConnection(connStr);
+
+            try
+
+            {
+
+
+
+                conn.Open();
+
+                //sql parancs – visszatérési érték nincs!!!
+
+                string sql = $"INSERT INTO `regisztracio`(`ID`, `username`, `email`, `password`) VALUES ('','{username}', '{email}', '{pass}')";
+
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                //parancs végrehajtása
+
+                if (username != "" && email != "" && pass != "")
+                {
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Sikeres regisztráció!");
+                    rendelés rend = new rendelés();
+                    rend.ShowDialog();
+                }
+                else 
+                {
+                    MessageBox.Show("Hiba!");
+                }
+               
+            }
+
+
+            catch (Exception ex)
+
+            {
+
+                MessageBox.Show(ex.ToString());
+
+            }
+
+            finally
+            {
+                conn.Close();
+            }
 
         }
     }
