@@ -30,18 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(burgerek));
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -57,16 +67,6 @@
             this.mennyiségToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kosárToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.leadásToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -95,6 +95,25 @@
             this.groupBox6.TabIndex = 39;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "groupBox6";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(150, 150);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(46, 13);
+            this.label14.TabIndex = 45;
+            this.label14.Text = "2.000 Ft";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label15.Location = new System.Drawing.Point(0, 145);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(29, 20);
+            this.label15.TabIndex = 44;
+            this.label15.Text = "Ár:";
             // 
             // button6
             // 
@@ -128,6 +147,25 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "groupBox5";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(141, 155);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(46, 13);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "3.500 Ft";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Location = new System.Drawing.Point(5, 150);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(29, 20);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Ár:";
+            // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(0, 99);
@@ -159,6 +197,25 @@
             this.groupBox4.TabIndex = 36;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(150, 155);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 13);
+            this.label8.TabIndex = 41;
+            this.label8.Text = "4.000 FT";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(0, 150);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 20);
+            this.label9.TabIndex = 40;
+            this.label9.Text = "Ár:";
             // 
             // button4
             // 
@@ -192,6 +249,25 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(150, 155);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "3.000 Ft";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(0, 150);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 20);
+            this.label7.TabIndex = 40;
+            this.label7.Text = "Ár:";
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(0, 99);
@@ -223,6 +299,27 @@
             this.groupBox2.TabIndex = 35;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(150, 148);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "2.500 Ft";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(0, 143);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 20);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Ár:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button2
             // 
@@ -342,6 +439,7 @@
             this.rendelésToolStripMenuItem.Name = "rendelésToolStripMenuItem";
             this.rendelésToolStripMenuItem.Size = new System.Drawing.Size(66, 53);
             this.rendelésToolStripMenuItem.Text = "Rendelés";
+            this.rendelésToolStripMenuItem.Click += new System.EventHandler(this.rendelésToolStripMenuItem_Click);
             // 
             // mennyiségToolStripMenuItem
             // 
@@ -360,103 +458,6 @@
             this.leadásToolStripMenuItem.Name = "leadásToolStripMenuItem";
             this.leadásToolStripMenuItem.Size = new System.Drawing.Size(55, 53);
             this.leadásToolStripMenuItem.Text = "Leadás";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(150, 148);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "2.500 Ft";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(0, 143);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 20);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Ár:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(150, 155);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 13);
-            this.label6.TabIndex = 41;
-            this.label6.Text = "3.000 Ft";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(0, 150);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 20);
-            this.label7.TabIndex = 40;
-            this.label7.Text = "Ár:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(150, 155);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 13);
-            this.label8.TabIndex = 41;
-            this.label8.Text = "4.000 FT";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(0, 150);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 20);
-            this.label9.TabIndex = 40;
-            this.label9.Text = "Ár:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(5, 150);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(29, 20);
-            this.label12.TabIndex = 42;
-            this.label12.Text = "Ár:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(141, 155);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 13);
-            this.label13.TabIndex = 43;
-            this.label13.Text = "3.500 Ft";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(150, 150);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(46, 13);
-            this.label14.TabIndex = 45;
-            this.label14.Text = "2.000 Ft";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.Location = new System.Drawing.Point(0, 145);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(29, 20);
-            this.label15.TabIndex = 44;
-            this.label15.Text = "Ár:";
             // 
             // burgerek
             // 

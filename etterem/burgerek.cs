@@ -36,5 +36,11 @@ namespace etterem
         {
 
         }
+
+        private void rendelésToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rendelés rendel=new rendelés();
+            rendel.ShowDialog();
+        }
     }
 }

@@ -67,5 +67,31 @@ namespace etterem
             pizza pizzauj = new pizza();
             pizzauj.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            szosz sos=new szosz();
+            sos.ShowDialog();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            burgerek burgerek = new burgerek();
+            burgerek.ShowDialog();
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            italok italok = new italok();
+            italok.ShowDialog();
+
+        }
     }
 }

@@ -60,7 +60,7 @@ namespace etterem
 
                 //parancs végrehajtása
 
-                if (username != "" && email != "" && pass != "")
+                if (username != "" && email != "" && pass != "" && email.Contains("@"))
                 {
 
                     cmd.ExecuteNonQuery();

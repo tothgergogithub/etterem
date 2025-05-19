@@ -73,6 +73,7 @@
             this.rendelésToolStripMenuItem.Name = "rendelésToolStripMenuItem";
             this.rendelésToolStripMenuItem.Size = new System.Drawing.Size(66, 53);
             this.rendelésToolStripMenuItem.Text = "Rendelés";
+            this.rendelésToolStripMenuItem.Click += new System.EventHandler(this.rendelésToolStripMenuItem_Click);
             // 
             // mennyiségToolStripMenuItem
             // 

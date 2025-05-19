@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bejelentkezes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bejelentkezes.Designer.cs">
+      <DependentUpon>bejelentkezes.cs</DependentUpon>
+    </Compile>
     <Compile Include="burgerek.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     <Compile Include="szosz.Designer.cs">
       <DependentUpon>szosz.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="bejelentkezes.resx">
+      <DependentUpon>bejelentkezes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="burgerek.resx">
       <DependentUpon>burgerek.cs</DependentUpon>
     </EmbeddedResource>

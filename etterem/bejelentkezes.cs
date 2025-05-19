@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace etterem
 {
-    public partial class Form3 : Form
+    public partial class bejelentkezes : Form
     {
-        public Form3()
+        public bejelentkezes()
         {
             InitializeComponent();
-        }
-
-        private void rendelésToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            rendelés rendel=new rendelés();
-            rendel.ShowDialog();
         }
     }
 }
