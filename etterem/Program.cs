@@ -16,7 +16,7 @@ namespace etterem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new regisztrácio());
+            Application.Run(new rendelés());
         }
          
     }

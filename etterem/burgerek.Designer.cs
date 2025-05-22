@@ -67,6 +67,12 @@
             this.mennyiségToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kosárToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.leadásToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -89,7 +95,7 @@
             this.groupBox6.Controls.Add(this.label15);
             this.groupBox6.Controls.Add(this.button6);
             this.groupBox6.Controls.Add(this.pictureBox7);
-            this.groupBox6.Location = new System.Drawing.Point(551, 286);
+            this.groupBox6.Location = new System.Drawing.Point(543, 407);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(200, 171);
             this.groupBox6.TabIndex = 39;
@@ -123,6 +129,7 @@
             this.button6.TabIndex = 27;
             this.button6.Text = "grill burger";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox7
             // 
@@ -140,7 +147,7 @@
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.button5);
             this.groupBox5.Controls.Add(this.pictureBox6);
-            this.groupBox5.Location = new System.Drawing.Point(295, 286);
+            this.groupBox5.Location = new System.Drawing.Point(287, 407);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(200, 171);
             this.groupBox5.TabIndex = 38;
@@ -174,13 +181,14 @@
             this.button5.TabIndex = 27;
             this.button5.Text = "marhaburger";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 19);
+            this.pictureBox6.Location = new System.Drawing.Point(-10, 19);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(191, 74);
+            this.pictureBox6.Size = new System.Drawing.Size(215, 74);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
@@ -191,7 +199,7 @@
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.button4);
             this.groupBox4.Controls.Add(this.pictureBox5);
-            this.groupBox4.Location = new System.Drawing.Point(10, 286);
+            this.groupBox4.Location = new System.Drawing.Point(2, 407);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(200, 171);
             this.groupBox4.TabIndex = 36;
@@ -225,6 +233,7 @@
             this.button4.TabIndex = 27;
             this.button4.Text = "fekete burger";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox5
             // 
@@ -242,7 +251,7 @@
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.pictureBox4);
-            this.groupBox3.Location = new System.Drawing.Point(560, 92);
+            this.groupBox3.Location = new System.Drawing.Point(552, 213);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(200, 171);
             this.groupBox3.TabIndex = 37;
@@ -276,6 +285,7 @@
             this.button3.TabIndex = 27;
             this.button3.Text = "grander";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox4
             // 
@@ -293,7 +303,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.pictureBox3);
-            this.groupBox2.Location = new System.Drawing.Point(304, 92);
+            this.groupBox2.Location = new System.Drawing.Point(296, 213);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 171);
             this.groupBox2.TabIndex = 35;
@@ -329,6 +339,7 @@
             this.button2.TabIndex = 27;
             this.button2.Text = "duplasajtburger";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox3
             // 
@@ -347,7 +358,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 92);
+            this.groupBox1.Location = new System.Drawing.Point(8, 213);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 171);
             this.groupBox1.TabIndex = 34;
@@ -391,11 +402,12 @@
             this.button1.TabIndex = 25;
             this.button1.Text = "Sajtburger";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(-3, 51);
+            this.label1.Location = new System.Drawing.Point(3, 172);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 38);
             this.label1.TabIndex = 33;
@@ -459,11 +471,73 @@
             this.leadásToolStripMenuItem.Size = new System.Drawing.Size(55, 53);
             this.leadásToolStripMenuItem.Text = "Leadás";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(131, 72);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 13);
+            this.label10.TabIndex = 70;
+            this.label10.Text = "label10";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(268, 125);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(98, 23);
+            this.button7.TabIndex = 69;
+            this.button7.Text = "Mégsem";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(268, 68);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(93, 21);
+            this.button8.TabIndex = 68;
+            this.button8.Text = "Kosárba";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label11.Location = new System.Drawing.Point(39, 128);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(34, 20);
+            this.label11.TabIndex = 67;
+            this.label11.Text = "Ára";
+            // 
+            // label16
+            // 
+            this.label16.AutoEllipsis = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label16.Location = new System.Drawing.Point(12, 57);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(109, 34);
+            this.label16.TabIndex = 66;
+            this.label16.Text = "Termék";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(131, 135);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(41, 13);
+            this.label17.TabIndex = 71;
+            this.label17.Text = "label17";
+            // 
             // burgerek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 491);
+            this.ClientSize = new System.Drawing.Size(800, 692);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -497,6 +571,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -540,5 +615,11 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }
