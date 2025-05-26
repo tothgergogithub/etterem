@@ -53,5 +53,36 @@ namespace etterem
             label14.Text = "Sőr";
             label17.Text = "1500 Ft";
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                colorDialog1.AllowFullOpen = true; // Teljes színpaletta 
+                
+                colorDialog1.ShowHelp = true; // Segítség gomb megjelenítése
+                colorDialog1.Color = Color.Red; // Alapértelmezett szín beállítása
+                if (colorDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    Color selectedColor = colorDialog1.Color;
+                    MessageBox.Show($"Selected color: {selectedColor}"); 
+                   ;
+                }
+                
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hozzáadtuk a terméket a kosárhoz");
+
+            Form4 kosar = new Form4();
+            kosar.ShowDialog();
+        }
     }
 }

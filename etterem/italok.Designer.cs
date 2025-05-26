@@ -73,10 +73,12 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -92,8 +94,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -493,7 +493,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(268, 164);
+            this.button7.Location = new System.Drawing.Point(468, 169);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(98, 23);
             this.button7.TabIndex = 81;
@@ -502,12 +502,13 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(268, 107);
+            this.button8.Location = new System.Drawing.Point(473, 113);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(93, 21);
             this.button8.TabIndex = 80;
             this.button8.Text = "Kosárba";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label15
             // 
@@ -529,55 +530,63 @@
             this.label16.TabIndex = 78;
             this.label16.Text = "Termék";
             // 
-            // groupBox7
+            // button12
             // 
-            this.groupBox7.Controls.Add(this.pictureBox8);
-            this.groupBox7.Controls.Add(this.label18);
-            this.groupBox7.Controls.Add(this.label19);
-            this.groupBox7.Controls.Add(this.button9);
-            this.groupBox7.Location = new System.Drawing.Point(18, 629);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(200, 171);
-            this.groupBox7.TabIndex = 52;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "groupBox7";
+            this.button12.Location = new System.Drawing.Point(295, 111);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 86;
+            this.button12.Text = "+";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // pictureBox8
+            // button14
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(4, 19);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(191, 74);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 28;
-            this.pictureBox8.TabStop = false;
+            this.button14.Location = new System.Drawing.Point(295, 169);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 23);
+            this.button14.TabIndex = 88;
+            this.button14.Text = "-";
+            this.button14.UseVisualStyleBackColor = true;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(150, 146);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label18.Location = new System.Drawing.Point(12, 677);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(46, 13);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "1.000 Ft";
+            this.label18.Size = new System.Drawing.Size(228, 20);
+            this.label18.TabIndex = 89;
+            this.label18.Text = "Kérsz az italodhoz szívószálat?";
             // 
-            // label19
+            // checkBox1
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label19.Location = new System.Drawing.Point(0, 141);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(29, 20);
-            this.label19.TabIndex = 25;
-            this.label19.Text = "Ár:";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(258, 677);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(47, 17);
+            this.checkBox1.TabIndex = 90;
+            this.checkBox1.Text = "Igen";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(419, 677);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(48, 17);
+            this.checkBox2.TabIndex = 91;
+            this.checkBox2.Text = "Nem";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(4, 99);
+            this.button9.Location = new System.Drawing.Point(482, 674);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(196, 23);
-            this.button9.TabIndex = 25;
-            this.button9.Text = "szívószál";
+            this.button9.Size = new System.Drawing.Size(109, 23);
+            this.button9.TabIndex = 29;
+            this.button9.Text = "Hozzáadás";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // italok
@@ -585,7 +594,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 881);
-            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button7);
@@ -624,9 +638,6 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -678,10 +689,12 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button button9;
     }
 }

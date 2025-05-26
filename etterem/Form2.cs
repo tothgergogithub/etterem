@@ -64,8 +64,8 @@ namespace etterem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            pizza pizzauj = new pizza();
-            pizzauj.ShowDialog();
+           pizzauj picca=new pizzauj();
+           picca.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -21,5 +21,20 @@ namespace etterem
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Filter tulajdonság a menthető fájltípusok megadásához
+            saveFileDialog1.Filter = "Szöveges fájl (*.txt)|*.txt|Minden fájl (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 1;
+            //DefaultExt tulajdonságot az alapértelmezett fájlkiterjesztés megadásához
+            saveFileDialog1.DefaultExt = "txt";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Fájl mentése a saveFileDialog1.FileName útvonalra
+                System.IO.File.WriteAllText(saveFileDialog1.FileName, "Mentett szöveg");
+            }
+           
+        }
     }
 }
