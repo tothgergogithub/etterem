@@ -38,7 +38,7 @@ namespace etterem
             string email = textBox2.Text;
             string pass = textBox3.Text;
 
-            string connStr = "server=localhost;user=root;database=regisztracio;port=3306;password=";
+            string connStr = "server=localhost;user=root;database=etterem;port=3306;password=";
 
             //adatbázis kapcsolat létrehozása
 
@@ -54,7 +54,7 @@ namespace etterem
 
                 //sql parancs – visszatérési érték nincs!!!
 
-                string sql = $"INSERT INTO `regisztracio`(`ID`, `username`, `email`, `password`) VALUES ('','{username}', '{email}', '{pass}')";
+                string sql = $"INSERT INTO `felhasznalok`(`ID`, `username`, `email`, `password`) VALUES ('','{username}', '{email}', '{pass}')";
 
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 

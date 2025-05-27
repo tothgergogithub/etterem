@@ -64,8 +64,8 @@ namespace etterem
 
         private void button2_Click(object sender, EventArgs e)
         {
-           pizzauj picca=new pizzauj();
-           picca.ShowDialog();
+            pizzauj picca = new pizzauj();
+            picca.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace etterem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            szosz sos=new szosz();
+            szosz sos = new szosz();
             sos.ShowDialog();
 
         }
@@ -93,5 +93,60 @@ namespace etterem
             italok.ShowDialog();
 
         }
+
+        private void oldalHáttérszíneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorDialog1.AllowFullOpen = true; // Teljes színpaletta 
+
+            colorDialog1.ShowHelp = true; // Segítség gomb megjelenítése
+            colorDialog1.Color = Color.Red; // Alapértelmezett szín beállítása
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Color selectedColor = colorDialog1.Color;
+                MessageBox.Show($"Selected color: {selectedColor}");
+                this.BackColor = selectedColor;
+
+
+            }
+
+        }
+
+        private void betűFormázásaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (FontDialog fontDialog = new FontDialog())
+            {
+                // If the user selects a font and clicks OK
+                if (fontDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Loop through all controls on the form
+                    foreach (Control control in this.Controls)
+                    {
+                        // Apply the selected font to each control that supports it
+                        listBox1.Font = fontDialog.Font;
+                        
+                    }
+                }
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.InitialDirectory = @"C:\";
+            saveFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveFileDialog1.OverwritePrompt = true;
+            saveFileDialog1.CreatePrompt = true;
+            saveFileDialog1.DefaultExt = "txt";
+            saveFileDialog1.AddExtension = true;
+            saveFileDialog1.Title = "Save a file";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = saveFileDialog1.FileName;
+                MessageBox.Show($"File saved to: {filePath}");
+            }
+
+
+        }
     }
 }
+
